@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+<div data-role="header">
+	<h3>Files</h3>
+</div>
+<div data-role="main" class="ui-content">
+<fieldset data-role="navbar" style="float:left">
+        <a onclick="javascript:location.href='/loggedout'" href="#">Sign out</a>
+</fieldset>
+
+<fieldset data-role="navbar" style="float:right">
+        <a onclick="javascript:location.href='/myaccount'" href="#">Home</a>
+</fieldset>
+<br><br><br>
+<form action="/files" method="post">
+	<fieldset data-role="collapsible">
+        <legend>Create a new folder</legend>
+        Enter parent folder path:&nbsp;
+        <input type="text" name="parentfolder">
+        Enter new folder name(No slashes/dots/colons):&nbsp;
+        <input type="text" name="newfolder">
+        <input type="submit" value="Create">
+	</fieldset>
+</form>
+
+<form action="/files" method="post">
+	<fieldset data-role="collapsible">
+        <legend>Move file</legend>
+	File name:
+	<input type="text" name="filename">
+	Source path:
+	<input type="text" name="srcpath">
+	Destination path:
+	<input type="text" name="dstpath">
+	<input type="submit" value="Move">
+	</fieldset>       
+</form>
+
+<form action="/files" method="post">
+	<fieldset data-role="collapsible">
+        <legend>Rename file</legend>
+	<h3>Rename file</h3>
+	File name:
+	<input type="text" name="filename">
+	Source path:
+	<input type="text" name="srcpath">
+	New file name:
+	<input type="text" name="newname">
+	<input type="submit" value="Rename">
+	</fieldset>      
+</form>
+
+<form action="/folder" method="post">
+        <fieldset data-role="collapsible">
+        <legend>View folder contents</legend>
+        Enter folder path to view content:&nbsp;
+        <input type="text" name="getfolder">
+        &nbsp;
+        <input type="submit" value="Enter">
+        </fieldset>
+</form>
+
+<form action="/files" enctype="multipart/form-data" method="post">
+        <fieldset data-role="collapsible">
+        <legend>Upload a file</legend>
+	Folder path for upload:&nbsp;
+	<input type="text" name="folder">&nbsp;&nbsp;
+	<input type="file" name="datafile" size="40">
+	<input type="submit" value="Upload">
+        </fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

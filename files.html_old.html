@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Files</title>
+</head>
+<body>
+<div style="float:left"><form method="post" action="/loggedout">
+<input type="submit" value="Sign out"></form></div>
+<div style="float:right"><a href="/myaccount">Home</a></div>
+<table><tr><td><div style="float:left">
+<h3>Upload a file</h3><br>
+<form action="/fileuploaded" enctype="multipart/form-data" method="post">
+Folder path for upload:&nbsp;
+<input type="text" name="folder" method="post">&nbsp;&nbsp;
+<br><br>
+<input type="file" name="datafile" size="40">
+<br><br>
+<input type="submit" value="Upload">
+</form>
+</div></td>
+<td><div style="float:right">
+<h3>Create a new folder</h3><br>
+<form action="/files" method="post">
+Enter parent folder path:&nbsp;
+<input type="text" name="parentfolder">
+<br><br>
+Enter new folder name(No slashes/dots/colons):&nbsp;
+<input type="text" name="newfolder">
+<br><br>
+<input type="submit" value="Create">
+</form>
+</div></td></tr>
+<br><br><br><br>
+<tr><td><div style="float:left">
+<h3>View folder content</h3><br>
+<form action="/files" method="post">
+Enter folder path to view content:&nbsp;
+<input type="text" name="getfolder">
+&nbsp;
+<input type="submit" value="Enter">
+</form></div></td><td>
+</td></tr>
+<tr><td>
+<form action="/files" method="post">
+<h3>Move file</h3><br>
+File name:
+<input type="text" name="filename">
+&nbsp;
+<input type="submit" value="Move"><br><br>
+Source path:
+<input type="text" name="srcpath"><br><br>
+Destination path:
+<input type="text" name="dstpath">
+</form></td>
+<br><br><br>
+<td><form action="/files" method="post">
+<h3>Rename file</h3><br>
+File name:
+<input type="text" name="filename">
+&nbsp;
+<input type="submit" value="Rename"><br><br>
+Source path:
+<input type="text" name="srcpath"><br><br>
+New file name:
+<input type="text" name="newname">
+</form></td></tr>
+</body>
+</html>

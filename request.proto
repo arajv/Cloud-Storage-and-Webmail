@@ -1,0 +1,10 @@
+message request{
+	required string request_type=1;
+	required int32 request_num=2;
+	optional bool success =3;
+	optional int32 fd=4;
+	optional string row=5;
+	optional string col=6;
+	repeated string val1=7;
+	repeated string val2=8;
+}

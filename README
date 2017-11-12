@@ -1,0 +1,40 @@
+CIS 505 Final Project - Penn Cloud
+
+Group members - 
+1. Abhinav Rajvanshi (arajv)
+2. Agrima Seth (agrima)
+3. Oshin Agarwal (oagarwal)
+3. Venny Kranthi Teja Kommarthi (venny)
+
+Full name:  Oshin Agarwal
+SEAS login: oagarwal
+
+Which features did you implement?
+  Entire project
+
+Did you complete any extra-credit tasks? If so, which ones?
+  Persistent HTTP connection, Trash and address book in mails, Make UI look prettier, Restarting servers from admin
+
+Did you personally write _all_ the code you are submitting
+(other than code from the course web page)?
+  [*] Yes
+  [ ] No
+
+Did you copy any code from the Internet, or from classmates?
+  [ ] Yes
+  [*] No
+
+Did you collaborate with anyone on this assignment?
+  [ ] Yes
+  [*] No
+
+Instructions to run the code -
+1. Install protobuf
+2. make clean
+3. make
+4. ./server_bck back_addr.txt 1 (for 1-4)
+5. ./server_front front_addr.txt 1 (for 1-2)
+6. ./frontMaster front_addr.txt 0
+7. /mainadmin back_addr.txt front_addr.txt 4111
+8. ./server_back_master back_addr.txt
+9. ./smtp back_addr.txt

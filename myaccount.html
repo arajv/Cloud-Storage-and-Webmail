@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>My account</title>
+</head>
+<style>
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
+}
+</style>
+<body>
+<br>
+<form method="post" action="/loggedout">
+<input type="submit" value="Sign out"> 
+<a href="/changepassword" style="margin-right:10px;float:right">Change password</a>
+</form>
+<br><br>
+<h3>
+<div align="center">
+<a href="mails"><img src="/images/mail.jpeg" style="transition:all 1s ease" onmouseover="this.width=200; this.height=200" onmouseout="this.width=100; this.height=100" alt="Mail"/></a>
+&nbsp;&nbsp;
+<a href="files"><img src="/images/drive.jpeg" style="transition:all 1s ease" onmouseover="this.width=200; this.height=200" onmouseout="this.width=100; this.height=100" alt="Drive"/></a>
+</div>
+</h3>
+</div>
+</body>
+</html>
