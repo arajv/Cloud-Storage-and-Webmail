@@ -6,28 +6,6 @@ Group members -
 3. Oshin Agarwal (oagarwal)
 3. Venny Kranthi Teja Kommarthi (venny)
 
-Full name:  Oshin Agarwal
-SEAS login: oagarwal
-
-Which features did you implement?
-  Entire project
-
-Did you complete any extra-credit tasks? If so, which ones?
-  Persistent HTTP connection, Trash and address book in mails, Make UI look prettier, Restarting servers from admin
-
-Did you personally write _all_ the code you are submitting
-(other than code from the course web page)?
-  [*] Yes
-  [ ] No
-
-Did you copy any code from the Internet, or from classmates?
-  [ ] Yes
-  [*] No
-
-Did you collaborate with anyone on this assignment?
-  [ ] Yes
-  [*] No
-
 Instructions to run the code -
 1. Install protobuf
 2. make clean
